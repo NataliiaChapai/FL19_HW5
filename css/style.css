@@ -1,0 +1,430 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+button {
+    border: none;
+}
+body {
+    font-family: 'system-ui', sans-serif;
+    margin: 0;
+    font-size: 3vw;
+}
+.header {
+    background-image: url(../img/wheat.jpg);
+    background-color: rgba(249, 246, 246, 0.694);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px 20px 40px;
+    text-align: center;
+}
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 12vw;
+}
+.header-link {
+    text-align: center;
+}
+.header-link:nth-child(1), .header-link:nth-child(2), .header-link:nth-child(3) {
+    margin-bottom: 3vw;
+}
+.header-text {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+.header-frase {
+    color: #e2ba7b;
+    font-weight: 400;
+}
+.header-btn {
+    font-size: 2.5vw;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-right: 2px solid #65aa44;
+    border-left: 2px solid #65aa44;    
+}
+.section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.companies {
+    background-color: rgba(249, 246, 246, 0.694);
+}
+.section-title {
+    border-left: 7px solid #65aa44;
+    border-bottom: 2px solid #65aa44;;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.section-text {
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.companies-item-title {
+    color: #65aa44;
+    font-size: 4vw;
+    margin-bottom: 15px;
+}
+.companies-item-text {
+    font-weight: 300;
+}
+.companies-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+.services {
+    padding-top: 10px;
+}
+.services-list {
+    width: 50%;
+}
+.services-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.services-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.prices {
+    display: none;
+}
+.advantages-list {
+    padding-left: 8vw;
+    font-weight: 300;
+}
+.advantages-item::before {
+    content: "\2022";
+    color: #e2ba7b;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -16px;
+}
+.news {
+    background-color: rgba(249, 246, 246, 0.694);
+    padding-top: 10px;
+}
+.news-list {
+    display: flex;
+    flex-direction: column;
+}
+.news-item {
+    box-shadow: 0px 0px 12px 0px #D3D3D3;
+    padding: 10px;
+    display: flex;
+}
+.news-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.news-img {
+    width: 20vw;
+    min-height: 20vw;
+    margin-right: 20px;
+}
+.news-item-wrapper {
+    font-size: 2.8vw;
+    font-weight: 300;
+}
+.news-item-title {
+    font-weight: 500;
+    font-size: 2.8vw;
+}
+.news-date {
+    font-style: italic;
+    color: #808080
+}
+.footer {
+    background-color: #f5f5f5;
+}
+.footer-contacts-list {
+    display: flex;
+}
+.footer-contacts-item {
+    display: flex;
+}
+.footer-contacts-title {
+    font-size: 3.5vw;
+    font-weight: 800;
+}
+.footer-contacts {
+    margin-bottom: 10px;
+}
+.footer-contacts-list li:not(:last-child) {
+margin-right: 15px;
+}
+.footer-contacts-list li {
+    align-items: center;
+}
+.footer-contacts-icon {
+    width: 6vw;    
+}
+.footer-contacts-list li {
+    display: flex;
+    align-items: flex-end;
+}
+.footer-office-list {
+    display: flex;
+    font-weight: 300;
+}
+.footer-office-list div {
+    width: 100%;
+}
+.footer-office-title {
+    width: 40%;
+}
+.footer-office-address:not(:last-child) {
+    margin-bottom: 30px;
+}
+.footer-office-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.8vw;
+}
+.footer-office-list:not(:last-child) {
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 769px) {
+    .header {
+        text-align: left;
+        padding: 15px 20px 100px;
+    }
+    .header-nav {
+        grid-template-columns: repeat(6, 1fr);
+        padding-left: 20vw;
+        margin-bottom: 4vw;
+        font-size: 2.5vw;
+    }
+    .header-text {
+        padding-left: 30vw;
+        font-size: 2.5vw;
+        text-align: left;
+    }
+    .header-btn {
+        margin-left: 30vw;
+        font-size: 1.5vw;
+        padding: 10px 40px;
+
+    }
+    .section {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+    .section-title {
+        border-left: 10px solid #65aa44;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: 3.5vw;
+        font-weight: 400;
+    }
+    .section-text {
+        font-size: 2vw;
+    }
+    .companies-item-title {
+        font-size: 3vw;
+    }
+    .companies-item-text {
+        font-size: 2vw;
+    }
+    .companies-list {
+        display: flex;
+        justify-content: center;
+    }
+    .companies-item:not(:last-child) {
+        margin-right: 40px;
+    }
+    .services-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .services-item {
+        width: 50%;
+        grid-template-columns: repeat(2, 1fr 2fr);
+    }
+    .services-item-title {
+        text-align: left;
+        font-size: 2.5vw;
+    }
+    .prices {
+        display: block;
+        background-color:#f5f5f5;
+        padding-top: 10px;
+    }
+    .prices-table {
+        border: 1px solid #e2ba7b;
+        font-size: 1.8vw;
+        border-collapse: collapse;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .prices-table td, th {
+        border: 3px solid #e2ba7b;
+        padding: 8px;
+    }
+    .prices-text {
+        font-style: italic;
+        font-size: 2vw;
+        font-weight: 300;
+    }
+    
+    .prices-table td:nth-child(1) {
+        font-weight: 700;
+    }
+    .advantages {
+        padding-top: 10px;
+    }
+    .advantages-list {
+        font-size: 2vw;
+    }
+    .news-date {
+        margin-bottom: 20px;
+    }
+    .news-item-wrapper, .news-item-title, .footer-contacts-title, .footer-office-item, .footer-office-title {
+        font-size: 2.5vw;
+    }
+    .footer-contacts-icon {
+        width: 4vw;
+    }
+}
+@media screen and (min-width: 992px) {
+    .header-nav {
+        grid-template-columns: repeat(6, 1fr);
+        padding-left: 25vw;
+        margin-bottom: 4vw;
+        font-size: 1.5vw;
+    }
+    .header-text {
+        padding-left: 40vw;
+        font-size: 2vw;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .header-btn {
+        margin-left: 40vw;
+        font-size: 1vw;
+        padding: 10px 40px;
+    }
+    .section-title {
+        font-size: 2.5vw;
+    }
+    
+    .section-text {
+        font-size: 1.5vw;
+    }
+    .companies {
+        padding-bottom: 20px;
+    }
+    .companies-item-title {
+        font-size: 2vw;
+    }
+        .companies-item-text {
+        font-size: 1.5vw;
+    }
+    .services-item {
+        width: 20%;
+        grid-template-columns: repeat(1, 1fr 2fr);
+    }
+    .services-item-title {
+        font-size: 1.5vw;
+    }
+    .prices-table {
+        width: 100%;
+        font-size: 1vw;
+        margin-bottom: 20px;
+    }
+    .prices-table td, th {
+        border: 2px solid #e2ba7b;
+    }
+    .prices-text {
+        font-size: 1.5vw;
+    }
+    .advantages-list {
+        font-size: 1.2vw;
+    }
+    .news-list {
+        flex-direction: row;
+        justify-content: space-between
+    }
+    .news-img {
+        width: 8vw;
+        min-height: 8vw;
+        margin-right: 10px;
+    }
+    .news-item-wrapper {
+        font-size: 1vw;
+    }
+    .news-item-title {
+        font-size: 1vw;
+    }
+    .news-item {
+        width: 31%;
+    }
+    .news-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .news-date {
+        margin-bottom: 0;
+    }
+    .footer {
+        display: flex;
+        padding-bottom: 30px;
+    }
+    .footer-contacts-list {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .footer-contacts-icon {
+        margin-right: 0;
+        width: 50px;
+    }
+    .footer-contacts-title {
+        font-size: 1vw;
+    }
+    .footer-office {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-office-list {
+        margin-left: 40px;
+        width: 30%;
+    }
+    .footer-office-title {
+        text-align: right;
+        margin-right: 20px;
+    }
+    .footer-contacts {
+        margin-bottom: 0;
+    }
+    .footer-office-title, .footer-office-item {
+        font-size: 1vw;
+    }
+    .footer-office-item {
+        width: 100%;
+    }
+}
